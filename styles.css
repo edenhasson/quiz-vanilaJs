@@ -1,0 +1,69 @@
+body{
+    height: 100%;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#step1,
+#step2,
+#step3,
+#results,
+.bar {
+  display: none;
+}
+img {
+  height: 100px;
+  width: 100px;
+}
+.draggable {
+  cursor: move;
+}
+
+.container {
+  background-color: black;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+}
+.container > h1 {
+  color: white;
+}
+
+.container-body {
+  display: flex;
+  gap: 20px;
+}
+
+.images-container > h1 {
+  display: none;
+}
+
+.progress {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: grey;
+}
+
+.question {
+  background-color: black;
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
